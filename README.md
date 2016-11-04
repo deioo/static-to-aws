@@ -17,5 +17,11 @@ A static website compiled using Grunt tasks that can be deployed online in no ti
 
 ## Deploy to S3
 
-* Run `bin/publish`
+* Run `bin/deploy`
 * Enjoy
+
+
+## Update the Content
+
+The project contains a static `dist/index.html` and an `dist/error.html` that can be edited manually.
+The CSS from `dist/styles` compiles, autoprefixes and minifies `styles/application.scss`
