@@ -1,0 +1,49 @@
+$playground-font-family: "Raleway", "Helvetica Neue", Helvetica, sans-serif;
+
+$font: (
+  family: $playground-font-family,
+
+  size: (
+    base: 20px
+  ),
+
+  weight: (
+    base: 400,
+    bold: 600,
+    extrabold: 800
+  ),
+
+  heading: (
+    family: $playground-font-family
+  )
+);
+
+$icon: (
+  sets: (
+    fa: 'FontAwesome',
+    material: 'Material Icons'
+  ),
+
+  default: material,
+
+  fa: (
+    angle-double-left: $fa-var-angle-double-left,
+    angle-down: $fa-var-angle-down,
+    angle-left: $fa-var-angle-left,
+    angle-right: $fa-var-angle-right,
+    angle-up: $fa-var-angle-up,
+  ),
+
+  material: (
+    directions-run: 'directions_run',
+    warning: 'warning'
+  )
+);
+
+$color: (
+  branding: #607D8B,
+
+  error: (
+    base: #FF3D00
+  )
+);

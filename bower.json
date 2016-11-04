@@ -1,0 +1,21 @@
+{
+  "name": "deioo-uk",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Andrei Popa <andrei.deioo@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "paint": "1.0.5",
+    "fontawesome": "4.6.3"
+  }
+}

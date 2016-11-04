@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,600,800,400italic);
+
+$branding-size: rem(64);
+
+@include b('application') {
+  @include e('container') {
+    padding: gutter(large);
+  }
+
+  @include e('branding' 'heading' 'description' 'footer') {
+    text-align: center;
+  }
+
+  @include e('branding') {
+    margin: 0 auto;
+    width: $branding-size;
+  }
+
+  @include e('heading') {
+    @extend %_heading;
+  }
+
+  @include e('footer') {
+    font-size: font(size, small);
+    color: color(text, small);
+  }
+}
+
+@include b('branding') {
+  @extend %row;
+  @extend %row-middle;
+  @extend %row-center;
+  @extend %icon-directions-run;
+  @extend %icon-larger;
+  @extend %icon-no-margin;
+
+  background-color: color(branding);
+  border-radius: radius(circle);
+  color: color(white);
+  height: $branding-size;
+  width: $branding-size;
+
+  @include m('error') {
+    @extend %icon-warning;
+    @extend %icon-larger;
+
+    background-color: color(error);
+  }
+}
+
+%_heading {
+  border-bottom: 1px solid color(border);
+  margin-bottom: gutter();
+  padding: gutter() 0;
+  text-transform: uppercase;
+}
+
+%_horizontal-separator {
+  &::before {
+    border-bottom: 1px solid color(border);
+    content: '';
+    left: 0;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: -1;
+  }
+}

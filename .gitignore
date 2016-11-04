@@ -1,0 +1,13 @@
+# compiled output
+/tmp
+/dist/styles
+/_backup
+
+# dependencies
+/node_modules
+/bower_components
+
+# misc
+/.sass-cache
+/.grunt
+/aws-keys.json
